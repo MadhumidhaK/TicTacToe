@@ -25,7 +25,7 @@ table{
     left: 20%;
     right: 0;
     bottom: 0; */
-    width: 350px;
+    /* width: 350px; */
     margin: auto;
 }
 
@@ -44,8 +44,8 @@ p{
 }
 
 td{
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
     border: black 10px solid;
     font-size: 50px;
     text-align: center;
@@ -53,9 +53,8 @@ td{
 
 #table{
     padding: 30px;
-    width: 410px;
-    margin: auto;
-    margin-top: 50px;
+    
+    margin-top: 150px;
     background-color: gainsboro;
 }
 .cross{
@@ -82,12 +81,26 @@ td{
     background-color: rgb(19, 204, 19);
 }
 
-@media  (min-width: 640px){
+@media (min-width: 400px){
+    #table{
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+}
+
+@media  (min-width: 500px){
     table{
-        width: 350px;
+         width: 350px;
     }
 
     #table{
         width: 410px;
+        margin: auto;
+        margin-top: 100px;
     }
+    td{
+        height: 100px;
+        width: 100px;
+    }
+    
 }
