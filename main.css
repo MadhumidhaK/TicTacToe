@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+}
+
+tr:first-of-type td{
+    border-top: none;
+}
+
+tr:last-of-type td{
+    border-bottom: none;
+}
+
+td:nth-of-type(odd){
+    border-left: none;
+}
+
+td:nth-of-type(3){
+    border-right: none;
+}
+
+table{
+    border-collapse: collapse;
+    /* position: relative;
+    top: 20%;
+    left: 20%;
+    right: 0;
+    bottom: 0; */
+    width: 350px;
+    margin: auto;
+    background-color: gainsboro;
+}
+
+p{
+    text-align: center;
+}
+#winner{
+    font-size: 30px;
+    font-weight: bold;
+    color: green;
+}
+
+#turn{
+    font-size: 20px;
+    color: red;
+}
+
+td{
+    height: 100px;
+    width: 100px;
+    border: black 10px solid;
+    font-size: 50px;
+    text-align: center;
+}
+
+#table{
+    padding: 30px;
+    width: 410px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: gainsboro;
+}
+.cross{
+    color: blue;
+}
+
+.o{
+    color: orangered
+}
+
+.center{
+    text-align: center;
+}
+
+#refresh{
+    margin-top: 30px;
+    border-radius: 5px;
+    height: 30px;
+    width: 100px;
+}
+
+
+#refresh:hover{
+    background-color: rgb(19, 204, 19);
+}
