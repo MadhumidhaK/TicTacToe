@@ -53,7 +53,7 @@ function checkWinner(arr){
 }
 
 function boxClick(){
-    
+        var flag = false;
         if(turn%2 == 0){
             turn++;
             crossBoxes.push(this.getAttribute('value'));
@@ -64,6 +64,7 @@ function boxClick(){
                 winnerP.textContent = "Winner is X"
                 afterGame();
                 turnP.textContent = ""
+                flag = true;
             }else{
                 turnP.textContent = "O's turn"
             }
@@ -75,13 +76,13 @@ function boxClick(){
             if(checkWinner(oBoxes)){
                 winnerP.textContent = "Winner is O"
                 afterGame();
-                 turnP.textContent = ""
+                turnP.textContent = "";
+                flag = true;
             }else{
                 turnP.textContent = "X's turn"
             }
         }
-        
-        if(turn == 9){
+        if(turn == 9 && !flag){
             turnP.textContent = ""
             winnerP.textContent = "Game is draw"
         }
